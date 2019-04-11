@@ -1,0 +1,22 @@
+{% from '_macros.html' import show_safaribabe, show_safaribabes with context %}
+{% from '_macros.html' import show_test, show_tests with context %}
+<!-- {% from '_macros.html' import show_science, show_sciences with context %}
+{% from '_macros.html' import show_manga, show_mangas with context %} -->
+<!doctype html>
+<html>
+<header>
+  <img src="/static/goodreads.png" alt="good reads logo">
+</header>
+  <head>
+    <title>Book Review Assignment</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.4/css/bulma.min.css">
+  </head>
+  <body>
+    <div class="container top">
+      <div class="content">
+        {% block content %}
+        {% endblock %}
+      </div>
+    </div>
+  </body>
+</html>
