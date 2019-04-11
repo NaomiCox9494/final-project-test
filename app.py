@@ -40,17 +40,15 @@ def safaribabes():
     safaribabes = execute_sql('SELECT * FROM safaribabes')
     return render_template('safaribabes.html', safaribabes=safaribabes)
 
-# @app.route('/Manga')
-# def mangas():
-#     mangas = execute_sql('SELECT * FROM mangas')
-#     return render_template('manga.html', mangas=mangas)
-#
+@app.route('/tests')
+def tests():
+    tests = execute_sql('SELECT * FROM tests')
+    return render_template('tests.html', tests=tests)
 
-#
-# @app.route('/SciFi')
-# def sciences():
-#     sciences = execute_sql('SELECT * FROM sciences')
-#     return render_template('SciFi.html', sciences=sciences)
+@app.route('/lamb')
+def lamb():
+    return render_template('lamb.html')
+
 
 if __name__ == '__main__':
     app.run(debug=True)

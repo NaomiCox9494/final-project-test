@@ -1,0 +1,44 @@
+{% extends "layout.html" %}
+
+{% block content %}
+<div class="container">
+<div class="section">
+  <h1>Manga</h1>
+  <p>manga is a japanese comic</p>
+  <p><a href="/index">Go back to the home page</a></p>
+  <div class="tile is-ancestor">
+    <div class="tile">
+      <div class="tile is-parent">
+        <article class="tile is-child notification is-info">
+          <p class="title">Death Note</p>
+          <figure class="image is-4by3">
+            <a href="/deathNote">
+              <img src="https://images.gr-assets.com/books/1419952134l/13615.jpg">
+            </a>
+          </figure>
+        </article>
+      </div>
+      <div class="tile is-parent">
+        <article class="tile is-child notification is-info">
+          <p class="title">Fruits Basket</p>
+          <figure class="image is-4by3">
+            <a href="/fruitsbasket">
+              <img src="https://images.gr-assets.com/books/1442161482l/271199.jpg">
+            </a>
+          </figure>
+        </article>
+      </div>
+      <div class="tile is-parent">
+        <article class="tile is-child notification is-info">
+          <p class="title">Ouran High School Host Club</p>
+          <figure class="image is-4by3">
+            <a href="/OuranHost">
+              <img src="https://images.gr-assets.com/books/1388328993l/1087204.jpg">
+            </a>
+          </figure>
+        </article>
+      </div>
+</div>
+</div>
+</div>
+{% endblock %}
