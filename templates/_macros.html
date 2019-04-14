@@ -26,7 +26,8 @@
     <div class="content">
       <h2>{{ tests['farm_title'] }}</h2>
       <h4>{{ tests['farm_spec'] }}</h4>
-      <p>{{ tests['farm_descripts'] }}</p><br>
+      <p>{{ tests['farm_descripts'] }}</p>
+     <br>
     </div>
   </div>
 </div>
@@ -41,49 +42,3 @@
   {% endfor %}
 </div>
 {% endmacro %}
-
-
-<!-- {% macro show_science(sciences) %}
-<div class="card adjust-height">
-  <div class="card-content">
-    <div class="content">
-      <h2>{{ sciences['scifi_title'] }}</h2>
-      <h4>{{ sciences['scifi_author'] }}</h4>
-      <p>{{ sciences['scifi_descript'] }}</p><br>
-    </div>
-  </div>
-</div>
-{% endmacro %}
-
-{% macro show_sciences(sciences) %}
-<div>
-  {% for science in sciences %}
-  <div>
-    {{ show_science(science) }}
-  </div>
-  {% endfor %}
-</div>
-{% endmacro %}
-
-
-{% macro show_manga(mangas) %}
-<div class="card adjust-height">
-  <div class="card-content">
-    <div class="content">
-      <h2>{{ mangas['mang_title'] }}</h2>
-      <h4>{{ mangas['mang_author'] }}</h4>
-      <p>{{ mangas['mang_descript'] }}</p><br>
-    </div>
-  </div>
-</div>
-{% endmacro %}
-
-{% macro show_mangas(mangas) %}
-<div>
-  {% for manga in mangas %}
-  <div>
-    {{ show_manga(manga) }}
-  </div>
-  {% endfor %}
-</div>
-{% endmacro %} -->

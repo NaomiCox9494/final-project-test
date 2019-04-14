@@ -31,7 +31,6 @@ def close_connection(exeption):
         connection.close()
 
 @app.route('/')
-@app.route('/books')
 def index():
     return render_template('index.html')
 
@@ -48,6 +47,10 @@ def tests():
 @app.route('/lamb')
 def lamb():
     return render_template('lamb.html')
+
+@app.route('/firstPage')
+def firstPage():
+    return render_template('firstPage.html')
 
 
 if __name__ == '__main__':

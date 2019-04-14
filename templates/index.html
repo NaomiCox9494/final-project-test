@@ -1,20 +1,33 @@
 {% extends "layout.html"%}
 {% block content %}
+
 <section class="hero is-primary is-medium has-bg-img">
 <div class="hero-body">
   <div class="container">
     <h1 class="title">
-      Animal Babies!
+      Enter Site
     </h1>
-    <h2 class="subtitle">
-      Lets meet baby animals from all around the world!
-    </h2>
+    <div class="field">
+  <label class="label">Name</label>
+  <div class="control">
+    <input class="input" type="text" placeholder="Text input">
+  </div>
+</div>
+
+<div class="field">
+  <label class="label">Username</label>
+  <div class="control">
+    <input class="input is-success" type="text" placeholder="Text input" value="">
+  </div>
+</div>
+
+<div class="field is-grouped">
+  <div class="control">
+    <button class="button is-link" type="submit"> <a href="/firstPage">Submit</a></button>
+  </div>
+</div>
+
   </div>
 </div>
 </section>
-  <div class="container">
-    <br>
-    <h2> <a href="/safaribabes">Safari Baby Animals</a></h2>
-    <h2> <a href="/tests">Farm Animals</a></h2>
-    <h2> <a href="/lamb">Baby Lambs</a></h2>
 {% endblock %}
